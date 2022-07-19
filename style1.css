@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto&display=swap');
+
+body {
+    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.list li:nth-child(1) {
+    animation: 1s infinite alternate text1;
+}
+
+@keyframes text1 {
+    from {
+        color: red;
+    }
+    to {
+        color: green;
+    }
+}
+
+.list li:nth-child(2) {
+    animation: 1s infinite alternate text2;
+}
+
+@keyframes text2 {
+    from {
+        color: yellow;
+    }
+    to {
+        color: blue;
+    }
+}
+
+.list li:nth-child(3) {
+    animation: 1s infinite alternate text3;
+}
+
+@keyframes text3 {
+    from {
+        color: deeppink;
+    }
+    to {
+        color: midnightblue;
+    }
+}
+
+.ava {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    /* animation-duration: 5s;
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: 4s infinite alternate anim;
+    box-sizing: border-box;
+}
+
+@keyframes anim {
+    from {
+        border-radius: 5%;
+        border: solid red;
+    }
+
+    to {
+        border: solid blue;
+        border-radius: 50%;
+    }
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+table {
+    background: yellow;
+    opacity: 0.5;
+    width: 90%;
+    border-collapse: collapse;
+    border: 2px solid green;
+}
+
+th, td {
+    border: 2px solid green;
+}
+
+.table1 {
+    margin-left: 5%;
+}
+
+h2 {
+    padding-left: 20px;
+}
+
+.text-center {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.card {
+    padding-bottom: 20px;
+    padding-top: 1px;
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+
+.name {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+button {
+    cursor: pointer;
+    background: orange;
+    border: none;
+    width: 50px;
+    height: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+button:hover {
+opacity: 0.9;
+}
+
+button:active {
+cursor: pointer;
+background: blue;
+border: solid red;
+width: 50px;
+height: 20px;
+border-radius: 15px;
+box-sizing: border-box;
+}
+
+a {
+color: orangered;
+}
+
+a:active {
+color: midnightblue;
+}
+
+input {
+    background: rgb(131, 230, 131);
+    border: none;
+}
+
+.bg-pink {
+    background: #f0bdbd;
+}
+
+.bg-blue {
+    background: #71e8e6;
+}
+
+.bg-green {
+    background: #7be993;
+}
