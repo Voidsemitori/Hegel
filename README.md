@@ -1,0 +1,2 @@
+# Hegel
+Great Hegel
